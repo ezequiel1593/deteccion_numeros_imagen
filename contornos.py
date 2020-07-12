@@ -28,7 +28,7 @@ ROI_number=0
 limites=[(0,60),(60,135),(135,210),(210,285),(285,360),(360,435),(435,505),(505,580),(580,650),(650,725),(725,795),(795,870),(870,940),(940,1010),(1010,1074)]
 for lim in limites:
     columna=[]
-#----------El siguiente bucle, lo que hace es asociar cada imagen de 'imagenes' con sus coordenadas más al noroeste (valor más bajo del eje x y del eje y), de modo que
+#----------El siguiente bucle, lo que hace es asociar cada imagen de 'imagenes' con su coordenada más al noroeste (valor más bajo del eje x y del eje y), de modo que
 #----------cada imagen queda asociada a 1 coordenada. Cada coordenada y su imagen, es guardada en la lista 'columna'
     for l,c in zip(range(len(imagenes)),imagenes):
         ejex=[imagenes[l][i][0][0] for i in range(len(c))]
